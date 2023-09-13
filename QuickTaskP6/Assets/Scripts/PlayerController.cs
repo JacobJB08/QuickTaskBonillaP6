@@ -46,12 +46,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D()
     {
-        if (collision.gameObject.CompareTag("Floor"))
-        {
             isOnGround = true;
-        }
     }
 }
  
